@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#pragma GCC optimize("Ofast,unroll-loops,inline,fast-math,omit-frame-pointer")
+#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt,tune=native,fma")#include<bits/stdc++.h>
 #define exoworldgd cin.tie(0)->sync_with_stdio(0),cout.tie(0)
 #define int long long
 using namespace std;
@@ -13,3 +14,4 @@ signed main(void){
     for(int i=0;i<=n;i++)for(int j=i&1;j<=m;j+=2)ans+=r[i]==b[j];
     cout<<ans;
 }
+
